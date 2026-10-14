@@ -11,4 +11,3 @@
 - слияние `Addfunction` -> `master`;
 - просмотр истории.
 
-Для публикации на GitHub нужно создать репозиторий в аккаунте пользователя и выполнить `git remote add origin ...`, затем `git push -u origin master`.
