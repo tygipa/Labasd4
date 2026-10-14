@@ -13,7 +13,7 @@ namespace HrGitDemo
 
             var lblInfo = new Label
             {
-                Text = "Это вторая форма.",
+                Text = "Это вторая форма. Привет из GitHub!",
                 Font = new Font("Segoe UI", 12f),
                 AutoSize = true,
                 Location = new Point(20, 20)
