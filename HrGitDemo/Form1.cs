@@ -8,6 +8,8 @@ namespace HrGitDemo
     {
         private readonly Label lblTitle;
         private readonly Button btnOpenForm2;
+        private readonly Button btnCounter;
+        private int clicks;
 
         public Form1()
         {
@@ -31,8 +33,23 @@ namespace HrGitDemo
             };
             btnOpenForm2.Click += BtnOpenForm2_Click;
 
+            btnCounter = new Button
+            {
+                Text = "Нажатий: 0",
+                Size = new Size(200, 35),
+                Location = new Point(20, 120)
+            };
+            btnCounter.Click += BtnCounter_Click;
+
             Controls.Add(lblTitle);
             Controls.Add(btnOpenForm2);
+            Controls.Add(btnCounter);
+        }
+
+        private void BtnCounter_Click(object sender, EventArgs e)
+        {
+            clicks++;
+            btnCounter.Text = "Нажатий: " + clicks;
         }
 
         private void BtnOpenForm2_Click(object sender, EventArgs e)
